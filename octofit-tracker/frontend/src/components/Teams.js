@@ -5,7 +5,7 @@ function Teams() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/teams')
+    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/teams/')
       .then(response => response.json())
       .then(data => setTeams(data));
   }, []);

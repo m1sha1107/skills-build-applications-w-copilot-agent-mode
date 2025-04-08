@@ -5,7 +5,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/activities')
+    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);

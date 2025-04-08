@@ -5,7 +5,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/leaderboard')
+    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/leaderboard/')
       .then(response => response.json())
       .then(data => setLeaderboard(data));
   }, []);

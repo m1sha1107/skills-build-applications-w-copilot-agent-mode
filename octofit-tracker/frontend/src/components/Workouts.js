@@ -5,7 +5,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/workouts')
+    fetch('https://improved-sniffle-r4grjg5p96jq2pq47-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);
